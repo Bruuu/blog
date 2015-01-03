@@ -1,0 +1,7 @@
+<h1>Статьи:</h1>
+<% @posts.each do |post|%>
+  <h3><%= post.title%></h3>
+  <p><%= post.content%></p>
+  <%= link_to('Read', page_path(slug: post.slug)) %>
+<% end %>
+
